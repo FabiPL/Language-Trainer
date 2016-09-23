@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="LWT-Trainer:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/LWT_Trainer_jar</output-path>
+    <root id="archive" name="LWT-Trainer.jar">
+      <element id="module-output" name="LWT-Trainer" />
+    </root>
+  </artifact>
+</component>

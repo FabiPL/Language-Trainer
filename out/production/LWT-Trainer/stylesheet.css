@@ -1,0 +1,22 @@
+.green-button {
+    -fx-background-color: #008000;
+}
+.green-button:focused {
+    -fx-background-color: #56FF00;
+}
+
+.red-button {
+    -fx-background-color: #b20000;
+}
+
+.red-button:focused {
+    -fx-background-color: #ff0000;
+}
+
+.correct-answer {
+  -fx-opacity: 1.0;
+}
+
+.wrong-answer {
+  -fx-opacity: 0.8;
+}

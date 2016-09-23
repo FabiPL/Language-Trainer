@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@stylesheet.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller">
+   <center>
+      <GridPane BorderPane.alignment="CENTER">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button fx:id="answ1Button" mnemonicParsing="false" onAction="#answ1ButtonClicked" prefHeight="100.0" prefWidth="280.0" text="Answer 1" textAlignment="CENTER" wrapText="true">
+               <GridPane.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" />
+               </GridPane.margin>
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="answ2Button" mnemonicParsing="false" onAction="#answ2ButtonClicked" prefHeight="100.0" prefWidth="280.0" text="Answer 2" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="1">
+               <GridPane.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" />
+               </GridPane.margin>
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="answ3Button" mnemonicParsing="false" onAction="#answ3ButtonClicked" prefHeight="100.0" prefWidth="280.0" text="Answer 3" textAlignment="CENTER" wrapText="true" GridPane.rowIndex="1">
+               <GridPane.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" />
+               </GridPane.margin>
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="answ4Button" mnemonicParsing="false" onAction="#answ4ButtonClicked" prefHeight="100.0" prefWidth="280.0" text="Answer 4" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <GridPane.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" />
+               </GridPane.margin>
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+         </children>
+         <BorderPane.margin>
+            <Insets top="10.0" />
+         </BorderPane.margin>
+      </GridPane>
+   </center>
+   <bottom>
+      <VBox>
+         <children>
+            <Label fx:id="sentenceLabel" alignment="TOP_CENTER" prefHeight="40.0" prefWidth="600.0" text="showSentence" textAlignment="CENTER" wrapText="true">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <HBox>
+               <children>
+                  <Label fx:id="feedbackLabel" alignment="CENTER" prefHeight="40.0" prefWidth="385.0" text="User feedback: Answer correct / incorrect +1 | -1">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Region HBox.hgrow="ALWAYS">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </Region>
+                  <Button fx:id="continueButton" mnemonicParsing="false" onAction="#continueButtonClicked" prefHeight="40.0" prefWidth="193.0" text="Continue">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <HBox.margin>
+                        <Insets right="10.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </HBox>
+         </children>
+         <BorderPane.margin>
+            <Insets bottom="10.0" />
+         </BorderPane.margin>
+      </VBox>
+   </bottom>
+   <top>
+      <HBox BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="leftButton" minWidth="-Infinity" mnemonicParsing="false" onAction="#leftButtonClicked" prefHeight="25.0" prefWidth="40.0" stylesheets="@stylesheet.css">
+               <HBox.margin>
+                  <Insets left="10.0" top="10.0" />
+               </HBox.margin>
+            </Button>
+            <Region maxHeight="-Infinity" prefHeight="30.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
+            <Label fx:id="termLabel" alignment="CENTER" prefHeight="27.0" prefWidth="504.0" text="Term">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+               <HBox.margin>
+                  <Insets top="5.0" />
+               </HBox.margin>
+            </Label>
+            <Region maxHeight="-Infinity" prefHeight="30.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
+            <Button fx:id="rightButton" minWidth="-Infinity" mnemonicParsing="false" onAction="#rightButtonClicked" prefWidth="40.0">
+               <HBox.margin>
+                  <Insets right="10.0" top="10.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+   </top>
+</BorderPane>
