@@ -9,9 +9,9 @@ public class TrainerFct {
 		database = new HashMap<>();
 	}
 
-    public HashMap<String, ArrayList<String>> getDatabase() {
-        return database;
-    }
+	public HashMap<String, ArrayList<String>> getDatabase() {
+		return database;
+	}
 
     public void setDatabase(HashMap<String, ArrayList<String>> database) {
         this.database = database;
